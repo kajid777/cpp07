@@ -1,3 +1,6 @@
+#ifndef ARRAY_TPP
+#define ARRAY_TPP
+
 template <typename T>
 Array<T>::Array() : _size(0), _data(NULL) {}
 
@@ -63,3 +66,5 @@ template <typename T>
 std::size_t Array<T>::size() const {
     return _size;
 }
+
+#endif  // ARRAY_TPP
